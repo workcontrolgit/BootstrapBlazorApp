@@ -1,0 +1,21 @@
+﻿@page "/call-web-api"
+@using System.Text.Json
+@using System.Text.Json.Serialization
+@inject IHttpClientFactory ClientFactory
+
+<h1>Call web API from a Blazor Server Razor component</h1>
+
+@if (getBranchesError || branches is null)
+{
+    <p>Unable to get branches from GitHub. Please try again later.</p>
+}
+else
+{
+    <ul>
+        @foreach (var branch in branches)
+        {
+            <li>@branch.Name</li>
+        }
+    </ul>
+}
+

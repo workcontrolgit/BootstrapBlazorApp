@@ -17,6 +17,16 @@
 
   <ItemGroup>
     <PackageReference Include="BootstrapBlazor" Version="7.*" />
+    <PackageReference Include="Microsoft.AspNetCore.Components" Version="7.0.4" />
+    <PackageReference Include="System.Net.Http.Json" Version="7.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\ApiResources\TalentManagement\Net7\ApiResourcesNet7\TalentManagementAPI\TalentManagementAPI.Domain\TalentManagementAPI.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>
